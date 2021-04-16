@@ -53,3 +53,19 @@
         color: red
 .red
     border: 1px solid red
+
+@media screen and (max-width: 930px)
+    .form
+        flex-direction: column
+        &__btn
+            margin-top: 10px
+            min-width: 280px
+            margin-left: 0
+@media screen and (max-width: 560px)
+    .registration
+        &__wrapper
+            flex-direction: column
+        &-block
+            width: 100%
+            text-align: center
+            padding-bottom: 15px

@@ -43,6 +43,8 @@
     &__link:last-child
         background: #FFF
         color: #A6B6DA
+    &__footer
+        display: none
 
 .active
     display: flex
@@ -54,8 +56,8 @@
         &__slider
             flex-direction: column
         &__content
-            padding-top: 20px
-            padding-bottom: 20px
+            padding-top: 0
+            padding-bottom: 0px
             width: 100%
             text-align: center
             &-left
@@ -65,7 +67,43 @@
                 margin-top: 25px
         &__content:last-child
             padding-top: 0
+            padding-bottom: 20px
         &__one
             margin-left: 0
         &__text
-            margin-top: 5px
+            margin-top: 12px
+@media screen and (max-width: 629px)
+    .resours
+        padding-bottom: 50px
+        &-block
+            padding-bottom: 30px
+        &__content
+            &-footer
+                display: flex
+                flex-direction: column
+        &__content:first-child
+            justify-content: center
+        &__one
+            max-width: 167px
+            max-height: 167px
+        &__img
+            max-width: 75px
+            max-height: 76px
+        &__title
+            font-size: 25px
+        &__text
+            max-width: 300px
+            font-size: 12px
+            margin-top: 0
+            text-align: center
+        &__btn
+            display: none
+        &__footer
+            width: 100%
+            display: flex
+            &-btn 
+                display: flex
+                width: 23px
+                height: 15px
+                cursor: pointer
+                margin-left: 10px
