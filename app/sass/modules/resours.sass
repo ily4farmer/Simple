@@ -8,10 +8,11 @@
     &__btn
         width: 23px
         height: 15px
+        cursor: pointer
     &__slider
         border: 1px solid #D8E3FE
         max-width: 958px
-        display: flex
+        display: none
     &__content
         padding-top: 63px
         padding-bottom: 63px
@@ -42,3 +43,29 @@
     &__link:last-child
         background: #FFF
         color: #A6B6DA
+
+.active
+    display: flex
+
+@media screen and (max-width: 1030px)
+    .resours
+        &-block
+            justify-content: space-evenly
+        &__slider
+            flex-direction: column
+        &__content
+            padding-top: 20px
+            padding-bottom: 20px
+            width: 100%
+            text-align: center
+            &-left
+                display: flex
+                flex-direction: column
+            &-footer
+                margin-top: 25px
+        &__content:last-child
+            padding-top: 0
+        &__one
+            margin-left: 0
+        &__text
+            margin-top: 5px

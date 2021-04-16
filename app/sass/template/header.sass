@@ -42,3 +42,42 @@
     justify-content: space-between
     &__img
         height: 15px
+
+@media screen and (max-width: 930px)
+    .header
+        &__inner
+            justify-content: space-between
+        &-block
+            display: flex
+            justify-content: space-between
+    .social
+        display: none
+    .menu
+        margin-left: 0
+        &__list
+
+@media screen and (max-width: 649px)
+    .menu
+        &__item
+            margin-left: 20px
+
+@media screen and (max-width: 579px)
+    .menu
+        &__list
+            margin-left: 25px
+        &__item
+            font-size: 10px
+@media screen and (max-width: 579px)
+    .header
+        &__btn
+            font-size: 12px
+@media screen and (max-width: 479px)
+    .menu
+        &__list
+            margin-left: 15px
+        &__item
+            font-size: 9px
+            margin-left: 6px
+    .header
+        &__btn
+            font-size: 10px

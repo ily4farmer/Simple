@@ -11,6 +11,7 @@
         display: flex
         justify-content: space-evenly
         align-items: flex-start
+        flex-wrap: wrap
     &__item
         max-width: 140px
         display: flex
@@ -43,3 +44,21 @@
     &__choice
         margin-left: 48px
         margin-right: 48px
+@media screen and (max-width: 680px)
+    .about
+        &-block
+            margin-top: -50px
+        &__item
+            margin-top: 30px
+        &__img
+            margin-bottom: 30px
+@media screen and (max-width: 386px)
+    .about
+        &-block
+            margin-top: -70px
+        &__footer
+            padding-top: 50px
+            flex-direction: column
+        &__choice
+            margin-top: 10px
+            margin-bottom: 10px   

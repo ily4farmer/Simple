@@ -35,6 +35,13 @@ function watching() {
 }
 
 
+let ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 const task = gulp.parallel(styles, html, script, img, fonts, svg);
 const dev = gulp.series(clean, task);
 
