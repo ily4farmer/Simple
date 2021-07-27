@@ -1,7 +1,8 @@
 const slider = () => {
     const slides = document.querySelectorAll('.resours__slider'),
           btnLeft = document.querySelector('#left'),
-          btnRight = document.querySelector('#right');
+          btnRight = document.querySelector('#right'),
+          btnFooter = document.querySelectorAll('.resours__footer-btn')
 
     let index = 0;
     function activeSlide(n) {
@@ -10,6 +11,8 @@ const slider = () => {
         } 
         slides[n].classList.add('active');
     }
+
+    console.log(btnFooter);
 
     function nextSlide() {
         if (index == slides.length - 1) {
@@ -31,6 +34,9 @@ const slider = () => {
 
     btnRight.addEventListener('click', nextSlide);
     btnLeft.addEventListener('click', backSlide);
+
+    btnFooter[0].addEventListener('click', nextSlide);
+    btnFooter[1].addEventListener('click', backSlide);
 }
 
 module.exports = slider;
