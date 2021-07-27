@@ -19,6 +19,10 @@
         font-weight: 500
     &__footer
         padding-top: 45px
+        @media screen and (max-width: 350px)
+            width: 70%
+            display: flex
+            flex-direction: column
     &__text
         max-width: 712px
         color: #FFF
@@ -27,6 +31,7 @@
         background: #FFF
         box-shadow: 0px 5px 15px #6480E8
         margin-left: 0
+        margin-bottom: 10px
     &__btn:last-child
         background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
         color: #C7D3FF
@@ -34,13 +39,3 @@
         padding-top: 12px 
         padding-bottom: 12px
         margin-right: 0
-@media screen and (max-width: 386px)
-    .started
-        padding: 55px 0 55px 0
-        &__footer
-            display: grid
-            grid-template-rows: 1fr
-            grid-row-gap: 10px
-            padding-top: 25px
-        &__btn
-            padding: 13px 50px
