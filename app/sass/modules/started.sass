@@ -19,10 +19,6 @@
         font-weight: 500
     &__footer
         padding-top: 45px
-        @media screen and (max-width: 350px)
-            width: 70%
-            display: flex
-            flex-direction: column
     &__text
         max-width: 712px
         color: #FFF
@@ -39,3 +35,10 @@
         padding-top: 12px 
         padding-bottom: 12px
         margin-right: 0
+@media screen and (max-width: 550px)
+    .started
+        &__footer
+            width: 70%
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
