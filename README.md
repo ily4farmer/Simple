@@ -22,5 +22,5 @@
 2. npm i
 3. gulp
 
-##### Build версия проекта - gulp deploy
+##### Build версия проекта - gulp build
 ##### Деплой на GhPages - gulp deploy
